@@ -14,4 +14,9 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  vite: {
+    ssr: {
+      noExternal: ['path-to-regexp'],
+    },
+  },
 })
