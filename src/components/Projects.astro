@@ -5,6 +5,8 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import Astro_ from "./icons/Astro_.astro"
 import LinkButton from "./LinkButton.astro"
+import Node from "./icons/Node.astro"
+import Express from "./icons/Express.astro"
 
 const TAGS = {
   NEXT: {
@@ -21,7 +23,17 @@ const TAGS = {
     name: "Astro",
     class: "bg-[#4A2130] text-white",
     icon: Astro_,
-  }
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#68a06372] text-white",
+    icon: Node,
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-[#bae0b6] text-black",
+    icon: Express,
+  },
 }
 const PROJECTS = [
   {
@@ -42,6 +54,14 @@ const PROJECTS = [
     image: "/projects/yanets.jpg",
     tags: [TAGS.ASTRO_TAG],
   },
+  {
+    title: "User Manager",
+    description:
+      "Gerenciador de usuarios com autenticação e operaçoes CRUD",
+    github: "https://github.com/yangenmanuel/sqlite-crud",
+    image: "/projects/usermanager.png",
+    tags: [TAGS.NODE, TAGS.EXPRESS],
+  }
 ]
 ---
 
